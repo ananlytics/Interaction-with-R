@@ -45,7 +45,8 @@ mycolour<-c("blue", "green")
 
 ```{r}
 
-p1<-data %>% group_by(data$`FG Class`) %>% summarise(count = n()) %>% plot_ly(x= ~ data$Country, y= ~ data$`Sales Quantity`, color = "purple")
+p1<-data %>% group_by(data$`FG Class`) %>% summarise(count = n())
+%>% plot_ly(x= ~ data$Country, y= ~ data$`Sales Quantity`, color = "purple")
 p1
 
 ```ruby
@@ -53,7 +54,8 @@ p1
 
 ```{r}
 
-p1<-data %>% group_by(data$`Solution Class`) %>% summarise(count = n()) %>% plot_ly(x= ~ data$Period, y= ~ data$`Sales Quantity`)
+p1<-data %>% group_by(data$`Solution Class`) %>% summarise(count = n())
+%>% plot_ly(x= ~ data$Period, y= ~ data$`Sales Quantity`)
 p1
 
 ```ruby
@@ -62,7 +64,8 @@ p1
 
 ```{r}
 
-p1<-data %>% group_by(data$`FG Class`) %>% summarise(count = n()) %>% plot_ly(x= ~ data$Country, y= ~ data$Value, type = "bar", color = "blue")
+p1<-data %>% group_by(data$`FG Class`) %>% summarise(count = n())
+%>% plot_ly(x= ~ data$Country, y= ~ data$Value, type = "bar", color = "blue")
 p1
 
 ```ruby
@@ -71,7 +74,8 @@ p1
 
 ```{r}
 
-p1<-data %>% group_by(data$`Solution Class`) %>% summarise(count = n()) %>% plot_ly(x= ~ data$Period, y= ~ data$Value, type = "scatter", color = "green")
+p1<-data %>% group_by(data$`Solution Class`) %>% summarise(count = n()) 
+%>% plot_ly(x= ~ data$Period, y= ~ data$Value, type = "scatter", color = "green")
 p1
 
 ```
