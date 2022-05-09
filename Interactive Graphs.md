@@ -41,6 +41,9 @@ data$`Solution Class` <- data$food_class
 
 mycolour<-c("blue", "green")
 
+```
+```ruby
+
 ### Chart A
 
 ```{r}
@@ -48,6 +51,7 @@ mycolour<-c("blue", "green")
 p1<-data %>% group_by(data$`FG Class`) %>% summarise(count = n())
 %>% plot_ly(x= ~ data$Country, y= ~ data$`Sales Quantity`, color = "purple")
 p1
+```
 
 ```ruby
 ### Chart B
@@ -57,7 +61,7 @@ p1
 p1<-data %>% group_by(data$`Solution Class`) %>% summarise(count = n())
 %>% plot_ly(x= ~ data$Period, y= ~ data$`Sales Quantity`)
 p1
-
+```
 ```ruby
 
 ### Chart C
@@ -67,6 +71,7 @@ p1
 p1<-data %>% group_by(data$`FG Class`) %>% summarise(count = n())
 %>% plot_ly(x= ~ data$Country, y= ~ data$Value, type = "bar", color = "blue")
 p1
+```
 
 ```ruby
 
