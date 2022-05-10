@@ -81,4 +81,9 @@ p1<-data %>% group_by(data$`category`) %>% summarise(count = n())
 p1
 
 ```
+#Final Dashboard with comprise of 4 charts as mentioned above and displayed below.
+![1](https://user-images.githubusercontent.com/104814594/167584188-398b158c-6ae0-4ccf-a1fa-7bb342fcf51b.JPG)
+
+
+
 
