@@ -1,6 +1,8 @@
 # Interactive dashboards in R
 ## We can code our way through to creating a simple dashboard for stakeholder concerned with output.
 ### We shall use a simple sales data to create four-charts with basic aesthetics.
+We can divide our code in different chunks, making it easier to find error and better execution.
+
 ```ruby
 ---
 title: "New Dashboard"
